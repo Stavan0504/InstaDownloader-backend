@@ -14,6 +14,10 @@ echo "Checking yt-dlp installation..."
 which yt-dlp || echo "yt-dlp not found in PATH"
 /usr/local/bin/yt-dlp --version
 
+# Create a symbolic link to make yt-dlp available in /usr/bin
+echo "Creating symbolic link for yt-dlp..."
+ln -sf /usr/local/bin/yt-dlp /usr/bin/yt-dlp
+
 # Make yt-dlp available for the Node.js process
 echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bashrc
 echo 'export PATH=$PATH:/usr/local/bin' >> ~/.profile
