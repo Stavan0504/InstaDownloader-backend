@@ -18,7 +18,7 @@ interface ExecResult {
 
 app.use(express.json());
 app.use(cors({
-  origin: ['https://your-vercel-app.vercel.app', 'http://localhost:3000'],
+  origin: ['https://insta-downloader-cyan.vercel.app', 'http://localhost:3000'],
   methods: ['GET', 'POST'],
   credentials: true
 }));
